@@ -129,5 +129,5 @@ if __name__ == '__main__':
 	# 	engine.say("this is a test")
 	# 	engine.runAndWait()
 	# 	time.sleep(1)
-	play_audio_thread("/home/ws/ugv_rpi/sounds/others/Boomopera_-_You_Rock_Full_Length.mp3")
+	play_audio_thread("/home/ws/ugv_beagley/sounds/others/Boomopera_-_You_Rock_Full_Length.mp3")
 	time.sleep(100)

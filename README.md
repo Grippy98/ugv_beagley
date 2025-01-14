@@ -1,14 +1,14 @@
-![GitHub top language](https://img.shields.io/github/languages/top/effectsmachine/ugv_rpi) ![GitHub language count](https://img.shields.io/github/languages/count/effectsmachine/ugv_rpi)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/effectsmachine/ugv_rpi)
-![GitHub repo size](https://img.shields.io/github/repo-size/effectsmachine/ugv_rpi) ![GitHub](https://img.shields.io/github/license/effectsmachine/ugv_rpi) ![GitHub last commit](https://img.shields.io/github/last-commit/effectsmachine/ugv_rpi)
+![GitHub top language](https://img.shields.io/github/languages/top/effectsmachine/ugv_beagley) ![GitHub language count](https://img.shields.io/github/languages/count/grippy98/ugv_beagley)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/grippy98/ugv_beagley)
+![GitHub repo size](https://img.shields.io/github/repo-size/grippy98/ugv_beagley) ![GitHub](https://img.shields.io/github/license/grippy98/ugv_beagley) ![GitHub last commit](https://img.shields.io/github/last-commit/grippy98/ugv_beagley)
 
 # Waveshare UGV Robots
-This is a Raspberry Pi example for the [Waveshare](https://www.waveshare.com/) UGV robots: **WAVE ROVER**, **UGV Rover**, **UGV Beast**, **RaspRover**, **UGV01**, **UGV02**.  
+This is a BeagleY-AI example for the [Waveshare](https://www.waveshare.com/) UGV robots: **WAVE ROVER**, **UGV Rover**, **UGV Beast**, **RaspRover**, **UGV01**, **UGV02**.  
 
 ![](./media/UGV-Rover-details-23.jpg)
 
 ## Basic Description
-The Waveshare UGV robots utilize both an upper computer and a lower computer. This repository contains the program running on the upper computer, which is typically a Raspberry Pi in this setup.  
+The Waveshare UGV robots utilize both an upper computer and a lower computer. This repository contains the program running on the upper computer, which is typically a BeagleY-AI in this setup.  
 
 The program running on the lower computer is either named [ugv_base_ros](https://github.com/effectsmachine/ugv_base_ros.git) or [ugv_base_general](https://github.com/effectsmachine/ugv_base_general.git) depending on the type of robot driver being used.  
 
@@ -47,10 +47,10 @@ You can use this tutorial to install this program on a pure Raspberry Pi OS.
 
 You can clone this repository from Waveshare's GitHub to your local machine.
 
-    git clone https://github.com/waveshareteam/ugv_rpi.git
+    git clone https://github.com/waveshareteam/ugv_beagley.git
     
 ### Grant execution permission to the installation script
-    cd ugv_rpi/
+    cd ugv_beagley/
     sudo chmod +x setup.sh
     sudo chmod +x autorun.sh
 ### Install app (it'll take a while before finish)
@@ -91,14 +91,14 @@ In this command, the s directive denotes a robot-type setting. The first digit, 
 ### Reboot Device
 If the program fails to run and encounters errors related to v4l2.py during runtime, you need to delete v4l2.py from both the Python virtual environment and the user environment. This will allow the program to automatically use the system-wide v4l2.py.  
 
-    cd ugv_rpi/  
+    cd ugv_beagley/  
     sudo rm ugv-env/lib/python3.11/site-packages/v4l2.py  
     sudo rm /home/[your_user_name]/.local/lib/python3.11/site-packages/v4l2.py  
 
 Now you can restart the main program app.py.
 
 # License
-ugv_rpi for the Raspberry Pi: an open source robotics platform for the Raspberry Pi.
+ugv_raspberrypi for the Raspberry Pi: an open source robotics platform for the Raspberry Pi.
 Copyright (C) 2024 [Waveshare](https://www.waveshare.com/)
 
 This program is free software: you can redistribute it and/or modify
