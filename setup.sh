@@ -140,7 +140,7 @@ echo "# Install required software."
 sudo apt update
 sudo apt upgrade -y
 sudo apt install -y libopenblas-dev libatlas3-base libcamera-dev python3-opencv portaudio19-dev
-sudo apt install -y util-linux procps hostapd iproute2 iw haveged dnsmasq iptables espeak
+sudo apt install -y util-linux procps hostapd iproute2 iw haveged dnsmasq iptables espeak jupyter
 
 
 echo "# Create a Python virtual environment."
